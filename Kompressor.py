@@ -5,12 +5,6 @@ import soundcard as sc
 import scipy.signal as sig
 import scipy.fft as fft
 
-
-
-
-
-
-
 class Kompressor:
     def __init__(self,
                  threshold_compressor:float,
