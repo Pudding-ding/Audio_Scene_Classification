@@ -27,7 +27,7 @@ plt.legend()
 d = {"file":["hallo"],"label":[2]}
 df = pd.DataFrame(d)
 
-new_row = {"filename":"path","label":2}
+new_row = {"filename":"path","label":[2]}
 
 df = pd.concat([df,pd.DataFrame(new_row)],axis=0)
 print(df)
