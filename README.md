@@ -12,8 +12,8 @@ This project is part of the exam in audio technology. The dataset is taken from 
 > 已修复问题：
 > - 修改some_tests 文件中 30行的数据格式问题
 
-
 ## 当前项目结构
+```
 |-Models 训练后的数据集
 |-.gitignore
 |-all_data.csv 所有训练数据的路径说明
@@ -26,3 +26,6 @@ This project is part of the exam in audio technology. The dataset is taken from 
 |-some_tests.py 环境测试
 |-Validation.py 调用 pre_precessing 验证模型
 |-validation_data 验证的数据集
+```
+
+> Author: DingDing
