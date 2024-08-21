@@ -34,13 +34,7 @@ class Kompressor:
         gain_factor = 10**(mean_dbfs/(20*ratio))
         dbfs = np.where(dbfs<threshold,data,data*gain_factor)
         return np.clip(dbfs,-1,1)
-        
-        
-        
-        
-        
-        
-    
+
     def apply_expander(self,data,threshold,ratio):
         rms = np.sqrt(data**2)
         gain = np.where(np.abs(rms) > threshold, ratio, 1.0)
@@ -48,9 +42,6 @@ class Kompressor:
         # Anwenden der Verstärkung
         output_signal = data * gain
         return np.clip(output_signal,-1,1)
-    
-    
-    
         
     def block_processing(self,data): #das vlt doch nicht als methode machen sondern spöter unten als programm durchlauf
         #do="filter" und argumente übergeben das dann mit getatr auf das zugegriffen werden kann

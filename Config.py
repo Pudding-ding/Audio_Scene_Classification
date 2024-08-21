@@ -12,8 +12,7 @@ from tqdm import tqdm
 if __name__ == '__main__':
     start_time = time.time()
     #----- device agnostic code
-    device = "cuda" if cuda.is_available() else "cpu"
-    
+    device = "cuda" if cuda.is_available() else "cpu"   # 如果本地有 cuda 环境，就用cuda，没有就用cpu
 
     #----------manage data
     all_data = pd.read_csv("all_data.csv",index_col=False)

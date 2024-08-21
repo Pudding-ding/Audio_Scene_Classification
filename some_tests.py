@@ -16,11 +16,8 @@ dbfs = 20*np.log10(rms)
 new_dbfs = np.where(dbfs> -10,rms,0.5*rms)
 plt.plot(new_dbfs,label="new dbfs",linestyle=":")
 
-
-
 plt.legend()
 # plt.show()
-
 
 # speaker.play(new_dbfs,2000)
 

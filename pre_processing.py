@@ -19,10 +19,6 @@ music_path = r"C:\Users\analf\Desktop\Studium\Learn_NN\Datasets\Data\music"
 
 #-----------global variables
 
-    
-
-
-
 #function to splitt val and train data 
 def split_data(df:pd.DataFrame):
     #split data
