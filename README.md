@@ -29,3 +29,5 @@ This project is part of the exam in audio technology. The dataset is taken from 
 ```
 
 > Author: DingDing
+
+原有仓库地址：https://github.com/NiggoNiggo/Audio_Scene_Classification

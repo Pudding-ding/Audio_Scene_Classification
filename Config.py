@@ -37,7 +37,7 @@ if __name__ == '__main__':
     hidden_layer_1 = 32
     hidden_layer_2 = 48 
     batch_size = 32 
-    num_workers = 12 #change this to your systems availible kernels
+    num_workers = 8 #change this to your systems availible kernels
     
     #-----------Dataloader
     lim = None #none bedeutet alle elemente /set to a number for faster computation
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     #----------init Network
     network = CNN(hidden_layer_1=hidden_layer_1,hidden_layer_2=hidden_layer_2,num_classes=num_classes).to(device)
     #load a pretrained model
-    network.load_state_dict(torch.load(r"Models\test_new_length_5_acc_0.98.pkl"))
+    network.load_state_dict(torch.load(r"Models\test_new_length_5_acc_0.98.pkl", map_location=torch.device('cpu')))
     #loss function
     loss_fn = nn.CrossEntropyLoss()
     optimizer = optim.Adam(network.parameters(),lr)
